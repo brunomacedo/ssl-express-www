@@ -4,7 +4,7 @@ It forces HTTPS when HTTP is required, remove www and remove slash-end from url.
 ## Installation
 
 ```prompt
-npm i save ssl-express-www
+npm i ssl-express-www
 ```
 
 ## Usage
