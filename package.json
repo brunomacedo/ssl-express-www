@@ -1,8 +1,8 @@
 {
   "name": "ssl-express-www",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "It forces HTTPS when HTTP is required, remove www and remove slash-end from url.",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
     "lib": "./node_modules/.bin/babel --out-dir lib source",
     "build": "rimraf lib && npm run lib -- --watch",
@@ -16,7 +16,8 @@
     "remove slash"
   ],
   "files": [
-    "lib"
+    "lib",
+    "index.js"
   ],
   "repository": {
     "type": "git",
