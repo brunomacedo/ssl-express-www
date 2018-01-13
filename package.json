@@ -15,6 +15,10 @@
     "remove www",
     "remove slash"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunomacedo/ssl-express-www.git"
+  },
   "author": "Bruno Macedo <contato@brunomacedo.com.br> (https://brunomacedo.com.br/)",
   "license": "MIT",
   "devDependencies": {
