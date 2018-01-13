@@ -25,7 +25,7 @@ app.listen(port, () => console.log('Server listening.'));
 ## Lib
 The lib should be auto-generate, but the babel doesn't work very well. It should export the module. I tried this way `package.json`:
 
-```javascript
+```json
 "scripts": {
   "lib": "./node_modules/.bin/babel --out-dir lib source",
   "build": "rimraf lib && npm run lib -- --watch"
