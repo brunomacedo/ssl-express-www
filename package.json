@@ -15,6 +15,9 @@
     "remove www",
     "remove slash"
   ],
+  "files": [
+    "lib"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brunomacedo/ssl-express-www.git"
