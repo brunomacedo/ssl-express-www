@@ -1,0 +1,36 @@
+{
+  "name": "ssl-express-www",
+  "version": "1.0.1",
+  "description": "It forces HTTPS when HTTP is required, remove www and remove slash-end from url.",
+  "main": "lib/index.js",
+  "scripts": {
+    "lib": "./node_modules/.bin/babel --out-dir lib source",
+    "build": "rimraf lib && npm run lib -- --watch",
+    "test": "./node_modules/.bin/mocha specs/**/*.spec.js --require babel-register --watch"
+  },
+  "keywords": [
+    "force-ssl",
+    "express",
+    "nodejs",
+    "remove www",
+    "remove slash"
+  ],
+  "author": "Bruno Macedo <contato@brunomacedo.com.br> (https://brunomacedo.com.br/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "mocha": "^4.1.0",
+    "rimraf": "^2.6.2"
+  }
+}
