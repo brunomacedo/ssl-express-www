@@ -1,9 +1,11 @@
 {
   "name": "ssl-express-www",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "It forces HTTPS when HTTP is required, remove www and remove slash-end from url.",
   "main": "index.js",
   "scripts": {
+    "lib": "./node_modules/.bin/babel source -d lib",
+    "build": "rimraf lib && npm run lib",
     "test": "./node_modules/.bin/mocha specs/**/*.spec.js --require babel-register --watch"
   },
   "keywords": [
@@ -27,6 +29,7 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
