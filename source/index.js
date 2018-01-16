@@ -5,7 +5,7 @@ export default (req, res, next) => {
   const fullUrl = `https://${www}${local}`;
   const removeSlash = site => site.replace(/\/$/, '');
 
-  if (schema !== 'https') {
+  if (www.indexOf('localhost') < 0 && schema !== 'https') {
     res.redirect(removeSlash(fullUrl));
   } else if (/^www\./i.test(req.headers.host) && schema === 'https') {
     res.redirect(removeSlash(fullUrl));
