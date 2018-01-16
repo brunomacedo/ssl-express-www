@@ -29,7 +29,7 @@ Babel@6 doesn't export default `module.exports` any more.
 npm i -D babel-plugin-add-module-exports
 ```
 
-### Usage in file `.babelrc`
+Usage in file `.babelrc`
 
 ```json
 {
