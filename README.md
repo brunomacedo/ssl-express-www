@@ -1,5 +1,5 @@
 # Force HTTPS in Express
-It forces HTTPS when HTTP is required, remove www and remove slash-end from url.
+It forces HTTPS when HTTP is required, remove www and slash-end from url.
 
 ## Installation
 
@@ -22,16 +22,33 @@ app.listen(port, () => console.log('Server listening.'));
 
 ```
 
-## Lib
-The lib should be auto-generate, but the babel doesn't work very well. It should export the module. I tried this way `package.json`:
+## Contributing
+Babel@6 doesn't export default `module.exports` any more.
+
+```prompt
+npm i -D babel-plugin-add-module-exports
+```
+
+### Usage in file `.babelrc`
+
+```json
+{
+  "presets": ["env"],
+  "plugins": [
+    "add-module-exports"
+  ]
+}
+```
+
+Run command to generate the lib `package.json`.
 
 ```json
 "scripts": {
-  "lib": "./node_modules/.bin/babel --out-dir lib source",
-  "build": "rimraf lib && npm run lib -- --watch"
+  "lib": "./node_modules/.bin/babel source -d lib",
+  "build": "rimraf lib && npm run lib"
 },
 ```
 
+## License
 
-## Contributing
-If you know about JavaScript / Nodejs / Unit tests. You should probably help me to improve this code, thanks! =D
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
