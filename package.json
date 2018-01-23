@@ -1,6 +1,6 @@
 {
   "name": "ssl-express-www",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "It forces HTTPS when HTTP is required, remove www and remove slash-end from url.",
   "main": "index.js",
   "scripts": {
