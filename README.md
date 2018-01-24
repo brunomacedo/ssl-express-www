@@ -1,5 +1,6 @@
-# Force HTTPS in Express
-It forces HTTPS when HTTP is required, remove www and slash-end from url.
+# Force SSL in Express
+
+Force SSL when HTTP is required. Remove www and slash-end on domain.
 
 ## Installation
 
@@ -7,14 +8,30 @@ It forces HTTPS when HTTP is required, remove www and slash-end from url.
 npm i ssl-express-www
 ```
 
-## Usage
+## Usage CommonJS
 
 ```javascript
-const express = require('express');
-const secure = require('ssl-express-www');
+var express = require('express');
+var secure = require('ssl-express-www');
+var app = express();
+
+app.use(secure);
+
+var port = process.env.PORT || 3000;
+app.listen(port, () => console.log('Server listening.'));
+
+```
+
+## Usage ES6
+
+Tranpile it with [Babel](https://babeljs.io/)
+
+```javascript
+import express from 'express';
+import secure from 'ssl-express-www';
+
 const app = express();
 
-// It forces HTTPS when HTTP is required
 app.use(secure);
 
 let port = process.env.PORT || 3000;
@@ -22,7 +39,9 @@ app.listen(port, () => console.log('Server listening.'));
 
 ```
 
-## Contributing
+
+## Contributing - [Git](https://github.com/brunomacedo/ssl-express-www)
+
 Babel@6 doesn't export default `module.exports` any more.
 
 ```prompt
@@ -38,15 +57,6 @@ Usage in file `.babelrc`
     "add-module-exports"
   ]
 }
-```
-
-Run command to generate the lib `package.json`.
-
-```json
-"scripts": {
-  "lib": "./node_modules/.bin/babel source -d lib",
-  "build": "rimraf lib && npm run lib"
-},
 ```
 
 ## License
