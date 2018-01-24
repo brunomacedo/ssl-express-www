@@ -1,7 +1,7 @@
 {
   "name": "ssl-express-www",
-  "version": "1.0.11",
-  "description": "It forces HTTPS when HTTP is required, remove www and remove slash-end from url.",
+  "version": "1.0.12",
+  "description": "Force SSL when HTTP is required. Remove www and slash-end on domain.",
   "main": "index.js",
   "scripts": {
     "lib": "./node_modules/.bin/babel source -d lib",
@@ -9,11 +9,14 @@
     "test": "./node_modules/.bin/mocha specs/**/*.spec.js --require babel-register --watch"
   },
   "keywords": [
-    "force-ssl",
-    "express",
+    "ssl",
+    "https",
     "nodejs",
-    "remove www",
-    "remove slash"
+    "domain",
+    "www",
+    "express",
+    "middleware",
+    "slash"
   ],
   "files": [
     "lib",
@@ -22,6 +25,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brunomacedo/ssl-express-www.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brunomacedo/ssl-express-www/issues"
   },
   "author": "Bruno Macedo <contato@brunomacedo.com.br> (https://brunomacedo.com.br/)",
   "license": "MIT",
