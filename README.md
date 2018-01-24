@@ -24,7 +24,7 @@ app.listen(port, () => console.log('Server listening.'));
 
 ## Usage ES6
 
-Tranpile it with [Babel](https://babeljs.io/)
+Transpile it with [Babel](https://babeljs.io/)
 
 ```javascript
 import express from 'express';
