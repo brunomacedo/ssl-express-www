@@ -1,7 +1,7 @@
 {
   "name": "ssl-express-www",
-  "version": "1.0.14",
-  "description": "Force SSL when HTTP is required. Remove www and slash-end on domain.",
+  "version": "1.0.15",
+  "description": "Force SSL (HTTPS) when HTTP is required using Express (Nodejs). Remove www and slash end on domain.",
   "main": "index.js",
   "scripts": {
     "lib": "./node_modules/.bin/babel source -d lib",
@@ -11,12 +11,16 @@
   "keywords": [
     "ssl",
     "https",
+    "express",
     "nodejs",
+    "node",
+    "force",
+    "enforce",
     "domain",
     "www",
-    "express",
     "middleware",
-    "slash"
+    "slash",
+    "remove"
   ],
   "files": [
     "lib",
