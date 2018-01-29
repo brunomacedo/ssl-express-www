@@ -42,7 +42,7 @@ app.listen(port, () => console.log('Server listening.'));
 ```
 
 
-## Contributing - [Github](https://github.com/brunomacedo/ssl-express-www)
+## Contributing
 
 Babel@6 doesn't export default `module.exports` any more.
 
