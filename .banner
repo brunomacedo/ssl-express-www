@@ -1,0 +1,5 @@
+/*!
+ * <%= pkg.name %> v<%= pkg.version %>
+ * <%= pkg.repository.url %>
+ * License <%= pkg.license %> © Bruno Macedo
+ */
