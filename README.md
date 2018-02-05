@@ -41,7 +41,6 @@ app.listen(port, () => console.log('Server listening.'));
 
 ```
 
-
 ## Contributing
 
 Babel@6 doesn't export default `module.exports` any more.
