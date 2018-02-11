@@ -1,5 +1,5 @@
 /*!
- * ssl-express-www v1.0.18
+ * ssl-express-www v1.0.20
  * git+https://github.com/brunomacedo/ssl-express-www.git
  * License MIT © Bruno Macedo
  */

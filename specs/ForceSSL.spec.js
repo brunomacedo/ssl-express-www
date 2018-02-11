@@ -1,32 +1,7 @@
 import { expect } from 'chai';
 import ForceSSL from '../source/ForceSSL';
 
-// const SSL = new ExpressSSL({ www: 'with', endSlash: 'with' });
-describe('Force HTTPS in Express', () => {
-  it('Should force schema to HTTPS when HTTP is require', () => {
-    const req = {
-      url: '/',
-      headers: {
-        'x-forwarded-proto': '',
-        host: 'example.com.br',
-      },
-    };
-
-    let next = () => `${req.headers['x-forwarded-proto']}://${req.headers.host}${req.url}`;
-
-    const res = {
-      redirect(callback) {
-        next = callback;
-        return next;
-      },
-    };
-
-    ForceSSL(req, res, next);
-    expect(res.redirect(next)).to.be.equal('https://example.com.br');
-  });
-});
-
-/* describe('Package Express Force HTTPS', () => {
+describe('Package Express Force HTTPS', () => {
   it('Should force schema to HTTPS when HTTP is require', () => {
     const req = {
       url: '/',
@@ -84,4 +59,4 @@ describe('Force HTTPS in Express', () => {
     ForceSSL(req, res, next);
     expect(res.redirect(next)).to.be.equal('https://example.com.br/app');
   });
-}); */
+});
