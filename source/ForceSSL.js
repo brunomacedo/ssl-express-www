@@ -1,4 +1,10 @@
+// import ExpressSSL from './ExpressSSL';
+// const newObj = ExpressSSL();
+
 export default (req, res, next) => {
+  // console.log(`with www: ${newObj.www} >> with slash: ${newObj.endSlash}`);
+  // console.log(ExpressSSL);
+
   const local = req.url;
   const schema = (req.headers['x-forwarded-proto'] || '').toLowerCase();
   const www = req.headers.host.replace(/www\./gi, '');
