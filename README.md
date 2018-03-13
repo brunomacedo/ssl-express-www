@@ -41,6 +41,14 @@ app.listen(port, () => console.log('Server listening.'));
 
 ```
 
+## Solve LF replace to CRLF on Git
+
+This command will solve the problem with linebreak replacement on `git commit`.
+
+```prompt
+git config --global core.autocrlf input
+```
+
 ## Contributing
 
 Babel@6 doesn't export default `module.exports` any more.
