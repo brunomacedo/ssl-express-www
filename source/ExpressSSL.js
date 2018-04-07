@@ -1,5 +1,5 @@
 /**
- * Using Function Constructor
+ * Using Function by Class Constructor
  */
 function ExpressSSL(props) {
   let hasWww = 'without';
