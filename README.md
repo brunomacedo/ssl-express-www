@@ -68,6 +68,29 @@ Usage in file `.babelrc`
 }
 ```
 
+## Update package version
+
+View usage | [view](https://coderwall.com/p/9bx-iq/npm-to-bump-module-version)
+
+
+```
+npm version patch -m "Bumped to version %s"
+```
+v2.1.**1**
+
+
+```
+npm version minor
+```
+v1.**2**.1
+
+
+```
+npm version major
+```
+v**3**.1.1
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
