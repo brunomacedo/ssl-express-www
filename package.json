@@ -1,6 +1,6 @@
 {
   "name": "ssl-express-www",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Force SSL (HTTPS) when HTTP is required using Express (Nodejs). Remove www and slash end on domain.",
   "main": "index.js",
   "scripts": {
