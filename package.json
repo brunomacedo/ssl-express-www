@@ -8,7 +8,7 @@
     "lib": "./node_modules/.bin/babel source -d lib",
     "build": "rimraf lib && npm run lib",
     "test": "./node_modules/.bin/mocha specs/**/*.spec.js --require babel-register",
-    "prepare": "npm run build"
+    "test-watch": "npm run test -- --watch || ECHO."
   },
   "keywords": [
     "ssl",
