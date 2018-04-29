@@ -5,13 +5,15 @@ export default (req, res, next) => {
   const fullUrl = `https://${www}${local}`;
   const removeSlash = site => site.replace(/\/$/, '');
 
-  if (www.indexOf('localhost') < 0 && schema !== 'https') {
+  const notLocalHost = () => www.indexOf('localhost') < 0;
+
+  if (notLocalHost() && schema !== 'https') {
     res.redirect(removeSlash(fullUrl));
-  } else if (/^www\./i.test(req.headers.host) && schema === 'https') {
+  } else if (notLocalHost() && /^www\./i.test(req.headers.host) && schema === 'https') {
     res.redirect(removeSlash(fullUrl));
-  } else if (/\/$/.test(fullUrl) && fullUrl !== `https://${www}/`) {
+  } else if (notLocalHost() && /\/$/.test(fullUrl) && fullUrl !== `https://${www}/`) {
     res.redirect(removeSlash(fullUrl));
-  } else {
-    next();
   }
+
+  return next();
 };
