@@ -2,7 +2,7 @@
 
 Force SSL (HTTPS) when HTTP is required using Express (Nodejs). Remove www and trailing slash on domain.
 
-[![project-version](https://img.shields.io/npm/v/ssl-express-www.svg?style=flat-square)](https://github.com/brunomacedo/ssl-express-www) [![downloads](https://img.shields.io/npm/dt/ssl-express-www.svg?style=flat-square)](https://www.npmjs.com/package/ssl-express-www) [![npm](https://img.shields.io/badge/npm-v5.5.1-red.svg?style=flat-square)](https://www.npmjs.com) [![mocha](https://img.shields.io/badge/mocha-v4.1.0-yellowgreen.svg?style=flat-square)](https://mochajs.org/) [![test](https://img.shields.io/badge/test-passing-brightgreen.svg?style=flat-square)](https://github.com/brunomacedo/ssl-express-www/blob/master/specs/index.spec.js)
+[![project-version](https://img.shields.io/npm/v/ssl-express-www.svg?style=flat-square)](https://github.com/brunomacedo/ssl-express-www) [![downloads](https://img.shields.io/npm/dt/ssl-express-www.svg?style=flat-square)](https://www.npmjs.com/package/ssl-express-www) [![npm](https://img.shields.io/badge/npm-v5.5.1-red.svg?style=flat-square)](https://www.npmjs.com) [![mocha](https://img.shields.io/badge/mocha-v4.1.0-yellowgreen.svg?style=flat-square)](https://mochajs.org/) [![Build Status](https://travis-ci.org/brunomacedo/ssl-express-www.svg?branch=master)](https://travis-ci.org/brunomacedo/ssl-express-www)
 
 ## Installation
 
