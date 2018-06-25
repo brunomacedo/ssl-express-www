@@ -4,7 +4,7 @@ import ForceSSL from '../source/ForceSSL';
 describe('Package Express Force HTTPS', () => {
   it('Should do nothing when localhost is required', () => {
     const req = {
-      url: '/app/',
+      url: '/app',
       headers: {
         'x-forwarded-proto': 'http',
         host: 'localhost:3000',
@@ -18,7 +18,7 @@ describe('Package Express Force HTTPS', () => {
       },
     };
     ForceSSL(req, res, next);
-    expect(res.redirect(next())).to.be.equal('http://localhost:3000/app/');
+    expect(res.redirect(next())).to.be.equal('http://localhost:3000/app');
   });
 
   it('Should force schema to HTTPS when HTTP is require', () => {
@@ -40,7 +40,7 @@ describe('Package Express Force HTTPS', () => {
     expect(res.redirect(next)).to.be.equal('https://example.com.br');
   });
 
-  it('Should remove www and force HTTPS', () => {
+  it('Should remove www and forces HTTPS', () => {
     const req = {
       url: '/',
       headers: {
@@ -59,7 +59,7 @@ describe('Package Express Force HTTPS', () => {
     expect(res.redirect(next)).to.be.equal('https://example.com.br');
   });
 
-  it('Should remove slash-end when path is require', () => {
+  it('Should remove trailing slash when path is require', () => {
     const req = {
       url: '/app/',
       headers: {
