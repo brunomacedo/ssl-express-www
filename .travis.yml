@@ -18,3 +18,8 @@ after_success:
 
 on:
   branch: master
+
+deploy:
+  provider: npm
+  email: "contato@brunomacedo.com.br"
+  api_key: $NPM_API_KEY
