@@ -1,7 +1,7 @@
 {
   "name": "ssl-express-www",
   "version": "3.0.1",
-  "description": "Force SSL (HTTPS) when HTTP is required using Express (Nodejs). Remove www and slash end on domain.",
+  "description": "Force SSL (HTTPS) when HTTP is required using Express (Nodejs). Remove www and trailing slash on domain.",
   "main": "index.js",
   "scripts": {
     "dist": "./node_modules/.bin/browserify source/ForceSSL.js -s sslExpress -t [babelify] -p [bannerify --file .banner] -o dist/index.js",
