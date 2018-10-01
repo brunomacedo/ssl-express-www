@@ -15,7 +15,6 @@ before_script:
 
 after_success:
   - npm run test
-  - npm publish
 
 on:
   branch: master
