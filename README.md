@@ -73,23 +73,28 @@ Usage in file `.babelrc`
 View usage | [view](https://coderwall.com/p/9bx-iq/npm-to-bump-module-version)
 
 
-```
+```prompt
 npm version patch -m "Bumped to version %s"
 ```
 v2.1.**1**
 
 
-```
+```prompt
 npm version minor
 ```
 v1.**2**.1
 
 
-```
+```prompt
 npm version major
 ```
 v**3**.1.1
 
+## List global NPM packages
+
+```prompt
+npm list -g --depth 0
+```
 
 ## License
 
