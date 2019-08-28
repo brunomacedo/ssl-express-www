@@ -6,9 +6,9 @@
   "scripts": {
     "dist": "./node_modules/.bin/browserify source/ForceSSL.js -s sslExpress -t [babelify] -p [bannerify --file .banner] -o dist/index.js",
     "lib": "./node_modules/.bin/babel source -d lib",
-    "build": "rimraf lib && npm run lib",
+    "build": "rm -rf lib dist && yarn lib && yarn dist",
     "test": "./node_modules/.bin/mocha specs/**/*.spec.js --require babel-register",
-    "test-watch": "npm run test -- --watch || ECHO."
+    "test-watch": "yarn test -- --watch || ECHO."
   },
   "keywords": [
     "ssl",

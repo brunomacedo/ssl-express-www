@@ -4,17 +4,18 @@ node_js:
   - "8"
 
 cache:
+  yarn: true
   directories:
-    "node_modules"
+    - node_modules
 
 before_install:
-  - npm install
+  - yarn
 
 before_script:
-  - npm run build
+  - yarn build
 
 after_success:
-  - npm run test
+  - yarn test
 
 on:
   branch: master
