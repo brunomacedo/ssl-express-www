@@ -1,8 +1,11 @@
 {
   "name": "ssl-express-www",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "description": "Force SSL (HTTPS) when HTTP is required using Express (Nodejs). Remove www and trailing slash on domain.",
   "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "dist": "./node_modules/.bin/browserify source/ForceSSL.js -s sslExpress -t [babelify] -p [bannerify --file .banner] -o dist/index.js",
     "lib": "./node_modules/.bin/babel source -d lib",
