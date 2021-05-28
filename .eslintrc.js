@@ -4,6 +4,7 @@ module.exports = {
     mocha: true
   },
   rules: {
-    'trailing-commas': ignore
+    'comma-dangle': 'off',
+    'function-paren-newline': 'off'
   }
 };
