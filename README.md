@@ -6,8 +6,8 @@ Redirecting HTTP to HTTPS. It forces SSL (HTTPS) when HTTP is required using Exp
 
 ## Installation
 
-```prompt
-npm i ssl-express-www
+```bash
+npm install ssl-express-www
 ```
 
 ## Usage CommonJS
@@ -39,61 +39,6 @@ app.use(secure);
 let port = process.env.PORT || 3000;
 app.listen(port, () => console.log('Server listening.'));
 
-```
-
-## Solve LF replace to CRLF on Git
-
-This command will solve the problem with linebreak replacement on `git commit`.
-
-```prompt
-git config --global core.autocrlf input
-```
-
-## Contributing
-
-Babel@6 doesn't export default `module.exports` any more.
-
-```prompt
-npm i -D babel-plugin-add-module-exports
-```
-
-Usage in file `.babelrc`
-
-```json
-{
-  "presets": ["env"],
-  "plugins": [
-    "add-module-exports"
-  ]
-}
-```
-
-## Update package version
-
-View usage | [view](https://coderwall.com/p/9bx-iq/npm-to-bump-module-version)
-
-
-```prompt
-npm version patch -m "Bumped to version %s"
-```
-v2.1.**1**
-
-
-```prompt
-npm version minor
-```
-v1.**2**.1
-
-
-```prompt
-npm version major
-```
-v**3**.1.1
-
-## List global NPM packages
-
-```prompt
-npm list -g --depth 0
 ```
 
 ## License
