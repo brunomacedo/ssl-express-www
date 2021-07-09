@@ -8,7 +8,8 @@
     "lib": "./node_modules/.bin/babel source -d lib",
     "build": "rm -rf lib dist && yarn lib && yarn dist",
     "test": "./node_modules/.bin/mocha specs/**/*.spec.js --require babel-register",
-    "test-watch": "yarn test -- --watch || ECHO."
+    "test-watch": "yarn test -- --watch || ECHO.",
+    "gen:contributors": "githubcontrib --owner brunomacedo --repo ssl-express-www --sortBy contributions --sortOrder desc --filter brunomacedo,dependabot[bot] --layoutStrategy $INIT_CWD/.github/contributors-list/layout-strategy-custom.js"
   },
   "keywords": [
     "ssl",
@@ -58,6 +59,7 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
+    "github-contributors-list": "^1.2.5",
     "mocha": "^4.1.0",
     "rimraf": "^2.6.2",
     "sinon": "^11.1.1"
