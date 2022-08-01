@@ -42,10 +42,10 @@
     "url": "https://github.com/brunomacedo/ssl-express-www/issues"
   },
   "author": "Bruno Macedo <contato@brunomacedo.com.br> (https://brunomacedo.com.br/)",
-  "license": "MIT",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
+  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
