@@ -25,5 +25,3 @@ deploy:
   skip_cleanup: true
   email: "contato@brunomacedo.com.br"
   api_key: $NPM_API_KEY
-  on:
-    tags: true
