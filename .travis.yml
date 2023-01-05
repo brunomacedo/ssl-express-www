@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - "8"
+  - "16"
 
 cache:
   yarn: true
@@ -25,3 +25,5 @@ deploy:
   skip_cleanup: true
   email: "contato@brunomacedo.com.br"
   api_key: $NPM_API_KEY
+  on:
+    tags: true
