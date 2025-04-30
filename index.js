@@ -1,1 +1,1 @@
-module.exports = require('./lib/ForceSSL');
+module.exports = require('./lib/index.js');
