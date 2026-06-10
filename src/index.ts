@@ -12,20 +12,17 @@ export default (req: Request, res: Response, next: NextFunction): void => {
 
   if (notLocalHost) {
     if (schema !== 'https') {
-      res.redirect(removeSlash(fullUrl));
-      return;
+      return res.redirect(removeSlash(fullUrl));
     }
 
     if (/^www\./i.test(hostHeader) && schema === 'https') {
-      res.redirect(removeSlash(fullUrl));
-      return;
+      return res.redirect(removeSlash(fullUrl));
     }
 
     if (/\/$/.test(fullUrl) && fullUrl !== `https://${www}/`) {
-      res.redirect(removeSlash(fullUrl));
-      return;
+      return res.redirect(removeSlash(fullUrl));
     }
   }
 
-  next();
+  return next();
 };
